@@ -3,9 +3,9 @@ from transactions import apply_deposit, apply_withdraw, apply_transfer
 
 class BankEngine:
     def __init__(self):
-        self.accounts = {}       # Hash Map
-        self.queue = []          # FIFO Queue
-        self.stack = []          # LIFO Stack for rollbacks
+        self.accounts = {}       
+        self.queue = []          
+        self.stack = []          
         self.audit = AuditLinkedList()
 
     def process_transaction(self):
